@@ -41,6 +41,12 @@ nav ul li {
 
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e4af00;
+    font-weight: bold;
+}
+
 nav {
     display: flex;
     position: fixed;
@@ -55,6 +61,10 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+h2 {
+    cursor: default;
 }
 
 .form-nav {
@@ -244,6 +254,8 @@ form button a {
     justify-content: center;
     gap: 20px;
     margin-bottom: 50px;
+    width: 80%;
+    margin: 0 auto 50px auto;
 }
 
 .pricing-1-list ul>li,
@@ -270,6 +282,7 @@ form button a {
     background-color: #f4511e;
     font-size: 25px;
     color: white;
+    text-align: center;
 }
 
 .pricing-1-prix,
@@ -310,6 +323,7 @@ form button a {
 .pricing-2,
 .pricing-3 {
     border: solid 1px #f4511e;
+    width: 26%;
 }
 
 #conttact .contact {
@@ -335,10 +349,11 @@ form button a {
 textarea {
     display: block;
     resize: none;
-    min-width: 836px;
+    min-width: 846px;
     border: solid 1px #9e9e9e;
     padding: 10px 8px;
     border-radius: 5px;
+    max-height: 130px;
 }
 
 .contact-texte ul {
@@ -346,6 +361,7 @@ textarea {
     text-align: left;
     margin-left: 50px;
     line-height: 40px;
+    margin-top: 30px;
 }
 
 .contact-texte {
@@ -354,9 +370,19 @@ textarea {
     display: flex;
 }
 
+.logo-contact {
+    line-height: 10px;
+}
+
 .contact-form {
     width: 60%;
     display: flex;
+}
+
+.logo-contact {
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -5px;
 }
 
 .contact-form form input:nth-of-type(1) {
@@ -382,4 +408,30 @@ textarea {
     background-color: white;
     border: solid 1px #9e9e9e;
     border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.maps iframe {
+    width: 100%;
+}
+
+.sous-footer {
+    text-align: center;
+}
+
+.sous-footer img {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.sous-footer p {
+    margin-bottom: 80px;
+}
+
+.sous-footer p a {
+    color: rgb(65, 137, 170);
+}
+
+.sous-footer p a:hover {
+    text-decoration: underline;
 }
