@@ -225,7 +225,7 @@ form button a {
 
 .portfolio {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     text-align: center;
     justify-content: center;
 }
@@ -292,7 +292,7 @@ form button a {
 .pricing-1-texte h5,
 .pricing-2-texte h5,
 .pricing-3-texte h5 {
-    padding: 30px 150px;
+    padding: 30px 0px;
     background-color: #f4511e;
     font-size: 25px;
     color: white;
@@ -364,7 +364,7 @@ form button a {
 textarea {
     display: block;
     resize: none;
-    min-width: 846px;
+    min-width: 98%;
     border: solid 1px #9e9e9e;
     padding: 10px 8px;
     border-radius: 5px;
@@ -392,6 +392,7 @@ textarea {
 .contact-form {
     width: 60%;
     display: flex;
+    padding-right: 20px;
 }
 
 .logo-contact {
@@ -449,4 +450,118 @@ textarea {
 
 .sous-footer p a:hover {
     text-decoration: underline;
+}
+
+.dot {
+    cursor: pointer;
+    height: 9px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #dfb132;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #f4511e;
+    border: solid 1px #f4511e;
+}
+
+#slide {
+    position: relative;
+}
+
+#slide h2 {
+    margin-bottom: 100px;
+}
+
+#slide p {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fleche-g {
+    position: static;
+    margin-right: 200px;
+}
+
+.fleche-d {
+    position: static;
+    margin-left: 200px;
+}
+
+@media (max-width: 1500px) {
+
+    .contact-form form input:nth-of-type(1),
+    .contact-form form input:nth-of-type(2) {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .portfolio {
+        display: inline-block;
+    }
+
+    #portfolio {
+        text-align: center;
+    }
+
+    .contact-form form input:nth-of-type(1),
+    .contact-form form input:nth-of-type(2) {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contact-form form input:nth-of-type(1),
+    .contact-form form input:nth-of-type(2) {
+        min-width: 150px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .fleche-d,
+    .fleche-g {
+        display: none;
+    }
+
+    .our {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-texte {
+        padding-right: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .our-img {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+
+    .about-texte {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-img {
+        width: 100%;
+    }
 }
