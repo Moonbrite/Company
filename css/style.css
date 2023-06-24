@@ -54,6 +54,7 @@ nav {
     align-items: center;
     background-color: #f4511e;
     width: 100%;
+    z-index: 999;
 }
 
 h1 {
