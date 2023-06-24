@@ -244,6 +244,47 @@ form button a {
     padding: 100px 0;
 }
 
+.dot {
+    cursor: pointer;
+    height: 9px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #dfb132;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #f4511e;
+    border: solid 1px #f4511e;
+}
+
+#slide {
+    position: relative;
+}
+
+#slide h2 {
+    margin-bottom: 100px;
+}
+
+#slide p {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fleche-g {
+    position: static;
+    margin-right: 200px;
+}
+
+.fleche-d {
+    position: static;
+    margin-left: 200px;
+}
+
 #pricing h2,
 #pricing p {
     text-align: center;
@@ -452,47 +493,6 @@ textarea {
     text-decoration: underline;
 }
 
-.dot {
-    cursor: pointer;
-    height: 9px;
-    width: 8px;
-    margin: 0 2px;
-    background-color: #dfb132;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dot:hover {
-    background-color: #f4511e;
-    border: solid 1px #f4511e;
-}
-
-#slide {
-    position: relative;
-}
-
-#slide h2 {
-    margin-bottom: 100px;
-}
-
-#slide p {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.fleche-g {
-    position: static;
-    margin-right: 200px;
-}
-
-.fleche-d {
-    position: static;
-    margin-left: 200px;
-}
-
 @media (max-width: 1500px) {
 
     .contact-form form input:nth-of-type(1),
@@ -562,6 +562,16 @@ textarea {
     }
 
     .about-img {
+        width: 100%;
+    }
+
+    .pricing {
+        flex-direction: column;
+    }
+
+    .pricing-1,
+    .pricing-2,
+    .pricing-3 {
         width: 100%;
     }
 }
