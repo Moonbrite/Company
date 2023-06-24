@@ -217,7 +217,7 @@ form button a {
 
 .portfolio {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     text-align: center;
     justify-content: center;
 }
@@ -269,6 +269,12 @@ form button a {
     font-size: 16px;
 }
 
+.pricing-1-list ul,
+.pricing-2-list ul,
+.pricing-3-list ul {
+    margin: 15px 0;
+}
+
 .pricing-1-list,
 .pricing-2-list,
 .pricing-3-list {
@@ -299,6 +305,7 @@ form button a {
     margin: 10px 0;
     margin-top: 25px;
     border: solid 1px #f4511e;
+    border-radius: 4px;
 }
 
 .pricing-1-prix button a,
