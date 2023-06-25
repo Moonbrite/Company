@@ -440,7 +440,8 @@ Footer
 }
 
 #contact>h2 {
-    padding: 30px 0;
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 
 .contact {
@@ -505,7 +506,7 @@ textarea {
     border-radius: 5px;
 }
 
-.contact-form form input:nth-of-type(3) {
+.contact-form form button {
     padding: 5px;
     margin: 20px 0;
     float: right;
