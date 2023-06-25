@@ -1,3 +1,4 @@
+/*Global*/
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,21 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+h2 {
+    cursor: default;
+}
+
+/* =============================================================================
+    Header
+*/
+
 header {
     background-color: #f4511e;
 }
@@ -29,6 +45,16 @@ nav h2 {
     font-weight: 400;
     text-transform: capitalize;
     font-size: 18px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: 1s all ease;
+}
+
+nav h2:hover {
+    transform: rotate(360deg);
+    transition: 1s all ease;
+    color: black;
+    font-weight: 900;
 }
 
 nav ul {
@@ -55,17 +81,6 @@ nav {
     background-color: #f4511e;
     width: 100%;
     z-index: 999;
-}
-
-h1 {
-    color: white;
-    font-size: 50px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-h2 {
-    cursor: default;
 }
 
 .form-nav {
@@ -101,6 +116,10 @@ form button a {
     color: white;
     font-size: 12px;
 }
+
+/* =============================================================================
+Section About
+*/
 
 .about {
     display: flex;
@@ -144,6 +163,10 @@ form button a {
     font-weight: 500;
 }
 
+/* =============================================================================
+Section Our
+*/
+
 .our {
     display: flex;
     background-color: #f6f6f6;
@@ -174,6 +197,10 @@ form button a {
     padding: 70px 0;
     line-height: 25px;
 }
+
+/* =============================================================================
+Section Services
+*/
 
 #services h2,
 #services>p {
@@ -207,6 +234,10 @@ form button a {
     margin-bottom: 30px;
 }
 
+/* =============================================================================
+Section Portfolio
+*/
+
 #portfolio h2,
 #portfolio>p {
     text-align: center;
@@ -238,6 +269,10 @@ form button a {
 .bg-blanc-port p {
     padding-bottom: 30px;
 }
+
+/* =============================================================================
+Section Slide
+*/
 
 #slide {
     background-color: #f6f6f6;
@@ -279,12 +314,18 @@ form button a {
 .fleche-g {
     position: static;
     margin-right: 200px;
+    cursor: pointer;
 }
 
 .fleche-d {
     position: static;
     margin-left: 200px;
+    cursor: pointer;
 }
+
+/* =============================================================================
+Section Pricing
+*/
 
 #pricing h2,
 #pricing p {
@@ -351,7 +392,7 @@ form button a {
 .pricing-2-prix button,
 .pricing-3-prix button {
     background-color: #f4511e;
-    padding: 8px;
+    padding: 8px 13px;
     margin: 10px 0;
     margin-top: 25px;
     border: solid 1px #f4511e;
@@ -382,6 +423,10 @@ form button a {
     border: solid 1px #f4511e;
     width: 26%;
 }
+
+/* =============================================================================
+Footer
+*/
 
 #conttact .contact {
     display: flex;
@@ -425,6 +470,7 @@ textarea {
     width: 40%;
     justify-content: center;
     display: flex;
+    padding-right: 20px;
 }
 
 .logo-contact {
@@ -467,6 +513,7 @@ textarea {
     border: solid 1px #9e9e9e;
     border-radius: 5px;
     margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .maps iframe {
@@ -493,6 +540,10 @@ textarea {
 .sous-footer p a:hover {
     text-decoration: underline;
 }
+
+/* =============================================================================
+Media Queries
+*/
 
 @media (max-width: 1500px) {
 
@@ -527,6 +578,23 @@ textarea {
     .services {
         flex-direction: column;
         gap: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-texte {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
     }
 }
 
