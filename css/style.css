@@ -652,7 +652,7 @@ Media Queries
     .pricing-1,
     .pricing-2,
     .pricing-3 {
-        width: 100%;
+        width: 98%;
     }
 }
 
@@ -699,6 +699,10 @@ Mesia Query Mobile
         width: 90%;
     }
 
+    #slide p {
+        padding: 0 15px;
+    }
+
     .contact-form {
         padding: 0 10px;
         width: 93%;
@@ -731,6 +735,10 @@ Mesia Query Mobile
 
     textarea {
         min-width: 89%;
+    }
+
+    .sous-footer p {
+        margin-bottom: 40px;
     }
 
 }
