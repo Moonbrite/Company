@@ -662,6 +662,9 @@ Mesia Query Mobile
 
 
 @media (max-width: 499px) {
+    * {
+        overflow-x: clip;
+    }
 
     nav {
         justify-content: start;
@@ -729,4 +732,5 @@ Mesia Query Mobile
     textarea {
         min-width: 89%;
     }
+
 }
