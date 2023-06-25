@@ -588,6 +588,7 @@ Media Queries
 
     .contact-texte {
         width: 100%;
+        padding-right: 0;
     }
 
     .contact-form {
@@ -595,10 +596,19 @@ Media Queries
         margin-top: 50px;
         display: flex;
         justify-content: center;
+        padding-right: 0;
     }
 }
 
 @media (max-width: 800px) {
+
+    nav ul li {
+        padding: 15px 10px;
+    }
+
+    .form-nav form input {
+        min-width: 300px;
+    }
 
     .fleche-d,
     .fleche-g {
