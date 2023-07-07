@@ -1,4 +1,9 @@
 /*Global*/
+:root {
+    --color-bg: #f4511e;
+    --color-text: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +21,7 @@ nav ul li a {
 }
 
 h1 {
-    color: white;
+    color: var(--color-text);
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -31,17 +36,17 @@ h2 {
 */
 
 header {
-    background-color: #f4511e;
+    background-color: var(--color-bg);
 }
 
 nav ul li a {
-    color: white;
+    color: var(--color-text);
     font-weight: 300;
     font-size: 14px;
 }
 
 nav h2 {
-    color: white;
+    color: var(--color-text);
     font-weight: 400;
     text-transform: capitalize;
     font-size: 18px;
@@ -78,7 +83,7 @@ nav {
     position: fixed;
     justify-content: space-around;
     align-items: center;
-    background-color: #f4511e;
+    background-color: var(--color-bg);
     width: 100%;
     z-index: 999;
 }
@@ -89,7 +94,7 @@ nav {
 }
 
 .form-nav p {
-    color: white;
+    color: var(--color-text);
     padding: 20px 0;
     font-weight: 400;
 }
@@ -108,12 +113,12 @@ nav {
 
 form button {
     padding: 5px;
-    background-color: #f54610;
-    border-color: #f54610;
+    background-color: var(--color-bg);
+    border-color: var(--color-bg);
 }
 
 form button a {
-    color: white;
+    color: var(--color-text);
     font-size: 12px;
 }
 
@@ -202,20 +207,20 @@ Section Our
 Section Services
 */
 
-#services h2,
-#services>p {
+.services h2,
+.services>p {
     text-align: center;
 }
 
-#services h2 {
+.services h2 {
     padding-top: 70px;
 }
 
-#services p {
+.services p {
     padding: 20px 0;
 }
 
-.services {
+.services-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,13 +229,13 @@ Section Services
     margin-top: 50px;
 }
 
-.services img {
+.services-img img {
     width: 90px;
     height: 90px;
     object-fit: contain;
 }
 
-.services:nth-of-type(2) {
+.services-img:nth-of-type(2) {
     margin-bottom: 30px;
 }
 
@@ -238,24 +243,24 @@ Section Services
 Section Portfolio
 */
 
-#portfolio h2,
-#portfolio>p {
+.portfolio h2,
+.portfolio>p {
     text-align: center;
 }
 
-#portfolio h2 {
+.portfolio h2 {
     padding: 50px 0;
 }
 
-#portfolio>p {
+.portfolio>p {
     padding-bottom: 25px;
 }
 
-#portfolio {
+.portfolio {
     background-color: #f6f6f6;
 }
 
-.portfolio {
+.portfolio-city {
     display: flex;
     gap: 20px;
     text-align: center;
@@ -274,7 +279,7 @@ Section Portfolio
 Section Slide
 */
 
-#slide {
+.slide {
     background-color: #f6f6f6;
     text-align: center;
     padding: 100px 0;
@@ -292,19 +297,19 @@ Section Slide
 }
 
 .dot:hover {
-    background-color: #f4511e;
+    background-color: var(--color-bg);
     border: solid 1px #f4511e;
 }
 
-#slide {
+.slide {
     position: relative;
 }
 
-#slide h2 {
+.slide h2 {
     margin-bottom: 100px;
 }
 
-#slide p {
+.slide p {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -327,20 +332,20 @@ Section Slide
 Section Pricing
 */
 
-#pricing h2,
-#pricing p {
+.pricing h2,
+.pricing p {
     text-align: center;
 }
 
-#pricing h2 {
+.pricing h2 {
     padding: 15px 0;
 }
 
-#pricing>p {
+.pricing>p {
     padding-bottom: 30px;
 }
 
-.pricing {
+.pricing-global {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -349,9 +354,7 @@ Section Pricing
     margin: 0 auto 50px auto;
 }
 
-.pricing-1-list ul>li,
-.pricing-2-list ul>li,
-.pricing-3-list ul>li {
+.pricing-list ul>li {
     list-style: none;
     text-align: center;
     line-height: 25px;
@@ -360,38 +363,28 @@ Section Pricing
     font-size: 16px;
 }
 
-.pricing-1-list ul,
-.pricing-2-list ul,
-.pricing-3-list ul {
+.pricing-list ul {
     margin: 15px 0;
 }
 
-.pricing-1-list,
-.pricing-2-list,
-.pricing-3-list {
+.pricing-list {
     border-bottom: solid 2px #f6f6f6;
 }
 
-.pricing-1-texte h5,
-.pricing-2-texte h5,
-.pricing-3-texte h5 {
+.pricing-texte h5 {
     padding: 30px 0px;
-    background-color: #f4511e;
+    background-color: var(--color-bg);
     font-size: 25px;
-    color: white;
+    color: var(--color-text);
     text-align: center;
 }
 
-.pricing-1-prix,
-.pricing-2-prix,
-.pricing-3-prix {
+.pricing-prix {
     text-align: center;
 }
 
-.pricing-1-prix button,
-.pricing-2-prix button,
-.pricing-3-prix button {
-    background-color: #f4511e;
+.pricing-prix button {
+    background-color: var(--color-bg);
     padding: 8px 13px;
     margin: 10px 0;
     margin-top: 25px;
@@ -399,21 +392,15 @@ Section Pricing
     border-radius: 4px;
 }
 
-.pricing-1-prix button a,
-.pricing-2-prix button a,
-.pricing-3-prix button a {
-    color: white;
+.pricing-prix button a {
+    color: var(--color-text);
 }
 
-.pricing-1-prix p,
-.pricing-2-prix p,
-.pricing-3-prix p {
+.pricing-prix p {
     padding-top: 15px;
 }
 
-.pricing-1-prix p span,
-.pricing-2-prix p span,
-.pricing-3-prix p span {
+.pricing-prix p span {
     font-size: 25px;
 }
 
@@ -428,23 +415,23 @@ Section Pricing
 Footer
 */
 
-#conttact .contact {
+.contact-global {
     display: flex;
     justify-content: center;
 }
 
-#contact {
+.contact {
     background-color: #f6f6f6;
     text-align: center;
     width: 100%;
 }
 
-#contact>h2 {
+.contact>h2 {
     padding-top: 70px;
     padding-bottom: 40px;
 }
 
-.contact {
+.contact-global {
     display: flex;
     justify-content: center;
 }
@@ -555,11 +542,11 @@ Media Queries
 }
 
 @media (max-width: 1300px) {
-    .portfolio {
+    .portfolio-city {
         display: inline-block;
     }
 
-    #portfolio {
+    .portfolio {
         text-align: center;
     }
 
@@ -576,14 +563,14 @@ Media Queries
         min-width: 150px;
     }
 
-    .services {
+    .services-img {
         flex-direction: column;
         gap: 0px;
     }
 }
 
 @media (max-width: 900px) {
-    .contact {
+    .contact-global {
         flex-direction: column;
     }
 
@@ -645,7 +632,7 @@ Media Queries
         width: 100%;
     }
 
-    .pricing {
+    .pricing-global {
         flex-direction: column;
     }
 
@@ -699,7 +686,7 @@ Mesia Query Mobile
         width: 90%;
     }
 
-    #slide p {
+    .slide p {
         padding: 0 15px;
     }
 
