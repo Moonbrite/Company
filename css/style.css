@@ -135,6 +135,9 @@ Section About
 .about-texte {
     width: 60%;
 }
+.about-texte p:nth-of-type(1)  {
+    font-weight: bold;
+}
 
 .about-texte h2 {
     padding-top: 70px;
@@ -208,6 +211,11 @@ Section Our
 Section Services
 */
 
+#services {
+    max-width: 1500px;
+    margin: auto;
+}
+
 .services h2,
 .services>p {
     text-align: center;
@@ -227,7 +235,9 @@ Section Services
     align-items: center;
     text-align: center;
     gap: 300px;
-    margin-top: 50px;
+    row-gap: inherit;
+    margin: 50px 0;
+    flex-wrap: wrap;
 }
 
 .services-img img {
